@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Docking Bay Management System</string>
+    <string name="title">Docking Bay\nManagement System</string>
+
+    <string name="docking_bay">Docking Bay</string>
+    <string name="fill_docking_bay">Add a ship here</string>
+    <string name="empty_docking_bay">This docking bay is empty.</string>
+    <string name="empty_planet_ships">No docked ships from this planet.</string>
+    <string name="empty_filter_ships">No docked ships match the filter conditions.</string>
+
+    <string name="planets">Planets</string>
+    <string name="planet_name">Planet Name</string>
+    <string name="planet_region">Region</string>
+    <string name="planet_distance">Distance</string>
+    <string name="planet_prices">Price</string>
+
+    <string name="ships">Ships</string>
+    <string name="ship_license">License</string>
+    <string name="ship_license_format">XXX-12345-XX67XX</string>
+    <string name="ship_type">Type</string>
+    <string name="ship_unclassified">Unclassified</string>
+    <string name="ship_arrival_date">Arrival Date</string>
+    <string name="ship_origin_planet">Origin Planet</string>
+
+    <string name="invalid_license_message">Must match format:</string>
+    <string name="delete_ship_message">Remove this ship's records?</string>
+    <string name="leave_form_message">All unsaved changes will be lost.</string>
+    <string name="loading_message">Loading ship data...</string>
+
+    <string name="save_button">Save</string>
+    <string name="search_button">Search</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- image/icon content descriptions -->
+    <string name="add_planet_cd">Add a new planet</string>
+    <string name="question_cd">See docking bay history</string>
+    <string name="edit_cd">Edit a ship</string>
+    <string name="delete_cd">Delete a ship</string>
+    <string name="sort_cd">Sort ships</string>
+    <string name="filter_cd">Filter ships</string>
+    <string name="calendar_cd">Open calendar</string>
+    <string name="ship_cd">Ship symbol</string>
+    <string name="planet_cd">Planet symbol</string>
+    <string name="save_cd">Save form data</string>
+    <string name="search_cd">Search ships</string>
+    <string name="back_cd">Go back</string>
+    <string name="error_cd">Invalid input</string>
+</resources>
