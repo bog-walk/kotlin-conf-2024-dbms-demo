@@ -1,8 +1,8 @@
 package dev.bogwalk.plugins
 
 import dev.bogwalk.databases.DAOFacadeImpl
-import dev.bogwalk.databases.DataAccessFacade
 import dev.bogwalk.databases.DSLFacadeImpl
+import dev.bogwalk.databases.DataAccessFacade
 import dev.bogwalk.databases.DatabaseFactoryImpl
 import io.ktor.server.application.*
 

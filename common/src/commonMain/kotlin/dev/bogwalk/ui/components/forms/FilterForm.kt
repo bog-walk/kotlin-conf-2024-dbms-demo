@@ -16,9 +16,6 @@ import dev.bogwalk.ui.components.LabelRadioButton
 import dev.bogwalk.ui.style.dateFieldSize
 import dev.bogwalk.ui.style.mediumDp
 import dev.bogwalk.ui.style.smallDp
-import kotlinx.datetime.Clock
-import kotlinx.datetime.TimeZone
-import kotlinx.datetime.toLocalDateTime
 import org.jetbrains.compose.resources.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -168,7 +165,7 @@ fun FilterForm(
                 isSearch = true,
                 onConfirmData = {
                     val lowerDistance = if (distanceBound.activeRangeStart == 0f) null else distanceBound.activeRangeStart.toDouble()
-                    val upperDistance = if (distanceBound.activeRangeEnd == 60000f) null else distanceBound.activeRangeEnd.toDouble()
+                    val upperDistance = if (distanceBound.activeRangeEnd == MAX_PLANET_DISTANCE) null else distanceBound.activeRangeEnd.toDouble()
                     val range = if (priceLower == "0" && priceUpper == "0") null else priceLower.toInt()..priceUpper.toInt()
                     val exactDate = if (dateOption == DateOption.EQUALS) comparisonDate else null
                     val lowerDate = if (dateOption == DateOption.GREATER) comparisonDate else null
@@ -182,7 +179,6 @@ fun FilterForm(
     )
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun SingleChoiceSegmentedButtonRowScope.DBMSSegmentedButton(
     index: Int,

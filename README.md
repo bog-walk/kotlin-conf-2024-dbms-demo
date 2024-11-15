@@ -1,6 +1,6 @@
 # :star::rocket: Docking Bay Management System
 
-This is a sample Kotlin Multiplatform desktop project accompanying the [KotlinConf 2024 introductory talk](https://kotlinconf.com/speakers/aa4f4219-1d5a-4d23-bcb3-42284ff37fb0/#Exploring%20the%20Exposed%20Library:%20A%20Kotlin%20Solution%20to%20Database%20Access) for the [Exposed library](https://github.com/JetBrains/Exposed).
+This is a sample Kotlin Multiplatform desktop project accompanying the [KotlinConf 2024 introductory talk](https://www.youtube.com/watch?v=YOXWnM_8vz8) for the [Exposed library](https://github.com/JetBrains/Exposed).
 
 ![](screenshots/dbms_demo.gif)
 

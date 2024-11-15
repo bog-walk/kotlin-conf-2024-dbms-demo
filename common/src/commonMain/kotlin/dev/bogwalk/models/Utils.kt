@@ -33,3 +33,5 @@ data class GridScrollPosition(
 )
 
 fun currentDate(): LocalDate = Clock.System.now().toLocalDateTime(TimeZone.UTC).date
+
+const val MAX_PLANET_DISTANCE = 60000f

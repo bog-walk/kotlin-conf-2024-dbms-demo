@@ -27,7 +27,7 @@ internal fun DropDownField(
             value = fieldValue,
             onValueChange = { onValueChange(it) },
             singleLine = true,
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
+            modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryEditable),
             label = { Text(fieldLabel) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded) }
         )
@@ -61,7 +61,7 @@ internal fun DropDownReadOnlyField(
             onValueChange = {},
             readOnly = true,
             singleLine = true,
-            modifier = Modifier.fillMaxWidth().menuAnchor(),
+            modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryNotEditable),
             label = { Text(fieldLabel) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded) }
         )

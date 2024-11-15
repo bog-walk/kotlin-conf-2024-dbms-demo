@@ -3,6 +3,7 @@ plugins {
     kotlin("plugin.serialization") apply false
     id("io.ktor.plugin") apply false
     id("org.jetbrains.compose") apply false
+    id("org.jetbrains.kotlin.plugin.compose") apply false
 }
 
 group = "dev.bogwalk"

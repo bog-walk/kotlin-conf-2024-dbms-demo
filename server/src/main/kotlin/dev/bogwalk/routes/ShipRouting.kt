@@ -4,14 +4,13 @@ import dev.bogwalk.databases.DataAccessFacade
 import dev.bogwalk.models.Region
 import dev.bogwalk.models.ShipInfo
 import io.ktor.http.*
-import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.resources.*
 import io.ktor.server.resources.post
 import io.ktor.server.resources.put
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import kotlinx.datetime.toLocalDate
+import kotlinx.datetime.LocalDate
 
 fun Route.shipRouting(daf: DataAccessFacade) {
     get<Ships> {
@@ -26,9 +25,9 @@ fun Route.shipRouting(daf: DataAccessFacade) {
             val license = qp["license"]
             val shipType = qp["type"]
             val nullTypeOnly = qp["nullType"]!!.toBoolean()
-            val dateExact = qp["dateExact"]?.toLocalDate()
-            val dateLower = qp["dateLower"]?.toLocalDate()
-            val dateUpper = qp["dateUpper"]?.toLocalDate()
+            val dateExact = qp["dateExact"]?.let { LocalDate.parse(it) }
+            val dateLower = qp["dateLower"]?.let { LocalDate.parse(it) }
+            val dateUpper = qp["dateUpper"]?.let { LocalDate.parse(it) }
             call.respond(
                 daf.filterShips(
                     sort, name, region, distanceLower, distanceUpper, range,

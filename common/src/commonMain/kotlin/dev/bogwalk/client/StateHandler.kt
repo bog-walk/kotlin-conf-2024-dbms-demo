@@ -22,7 +22,7 @@ abstract class StateHandler : Client {
     var tempEditShip by mutableStateOf<TemporaryShipInfo?>(null)
     var filterShipCache by mutableStateOf(emptyList<ShipInfo>())
     var sortFilterAscending by mutableStateOf(true)
-    var maxPlanetDistance by mutableStateOf(60000f)
+    var maxPlanetDistance by mutableStateOf(MAX_PLANET_DISTANCE)
 
     var isDeleteDialogOpen by mutableStateOf(false)
     var isWarningDialogOpen by mutableStateOf(false)
